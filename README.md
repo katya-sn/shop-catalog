@@ -1,13 +1,15 @@
 # Store React Application
 
+[DEMO LINK](https://katya-sn.github.io/shop-catalog/#/)
+
 This project is a tech store website developed using React and TypeScript. It provides a single-page application (SPA) experience with optimized rendering and advanced features for managing and browsing tech products, including phones, tablets, and accessories.
 
-##**Main Technologies Used**
+## Main Technologies Used
 1. **React**: A JavaScript library for building user interfaces. This project uses functional components for efficient and reusable UI elements.
 2. **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript. It helps in catching errors early and improving code quality.
 3. **react-router-dom**: A library for handling routing in React applications, enabling navigation between different views within the single-page app.
 
-##**Hooks**: 
+## Hooks: 
 Various React hooks are employed for optimized state management and side effects:
 1. **useMemo**: For memoizing expensive calculations.
 2. **useState**: For managing component state.
@@ -15,7 +17,7 @@ Various React hooks are employed for optimized state management and side effects
 4. **useEffect**: For handling side effects and data fetching.
 5. **useReducer**: For managing complex state logic.
    
-##**Features**
+## Features
 
 **Product Management**
 1. **Product Loading**: Products are fetched from an API using fetch with async/await for asynchronous data retrieval.
@@ -39,3 +41,10 @@ Various React hooks are employed for optimized state management and side effects
 5. **Favorites and Cart**:
    Users can add products to their favorites or cart directly from the catalog. They can also edit the quantity of items or remove them from the cart directly within the cart interface.
 6. **Responsive Design**: The application is designed to be responsive, adapting to various screen sizes, including large screens, desktops, tablets, and mobile devices.
+
+## How to Run the Page Locally
+1. Clone the repository to your local machine using the command **`git clone https://github.com/katya-sn/shop-catalog.git`**.
+2. Then, navigate to the project directory using **cd shop-catalog**.
+3. Make sure you have Node.js and npm installed, and install the project dependencies by running **`npm install`**.
+4. After the dependencies are installed, start the development server with **`npm start`**.
+5. Finally, open your browser and go to **http://localhost:3000** to see the Landing running locally.
