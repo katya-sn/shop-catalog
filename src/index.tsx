@@ -1,9 +1,15 @@
 import { createRoot } from 'react-dom/client';
+import { Root } from './Root';
+import { ProductProvider } from './context/productContext';
+import { FavouritesProvider } from './context/favouritesContext';
+import { CartProvider } from './context/cartContext';
 
-import 'bulma/css/bulma.css';
-import '@fortawesome/fontawesome-free/css/all.css';
-import './index.scss';
-
-import { App } from './App';
-
-createRoot(document.getElementById('root') as HTMLDivElement).render(<App />);
+createRoot(document.getElementById('root') as HTMLElement).render(
+  <ProductProvider>
+    <FavouritesProvider>
+      <CartProvider>
+        <Root />
+      </CartProvider>
+    </FavouritesProvider>
+  </ProductProvider>,
+);
